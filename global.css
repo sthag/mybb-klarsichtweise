@@ -4,7 +4,7 @@ body {
 	text-align: center;
 	line-height: 1.4;
 	margin: 0;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
 	overflow-y: scroll;
 }
@@ -30,7 +30,7 @@ a:active {
 	text-align: left;
 	line-height: 1.4;
 	margin: 0;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
 }
 
@@ -561,7 +561,7 @@ input.textbox {
 	padding: 3px;
 	outline: 0;
 	font-size: 13px;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 }
 
 textarea {
@@ -571,7 +571,7 @@ textarea {
 	padding: 2px;
 	line-height: 1.4;
 	outline: 0;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
 }
 
@@ -580,7 +580,7 @@ select {
 	padding: 3px;
 	border: 1px solid #CCC;
 	outline: 0;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
 }
 
@@ -588,7 +588,7 @@ button,
 input.button {
 	padding: 3px 8px;
 	cursor: pointer;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
 	background: #EEE url(images/buttons_bg.png) repeat-x;
 	border: 1px solid #bbb;
@@ -613,7 +613,7 @@ form input.error {
 	padding: 3px;
 	outline: 0;
 	font-size: 13px;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 }
 
 form input.valid {
@@ -622,7 +622,7 @@ form input.valid {
 	padding: 3px;
 	outline: 0;
 	font-size: 13px;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 }
 
 form label.error {
@@ -1470,7 +1470,7 @@ a.button.report_user_button span {
 	padding: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-family: 'Trebuchet MS', Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 1em;
 	text-align: left;
 	display: none;
