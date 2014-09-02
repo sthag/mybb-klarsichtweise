@@ -32,14 +32,12 @@ a:active {
 	margin: 0;
 	font-family: Tahoma, Verdana, Arial, Sans-Serif;
 	font-size: 13px;
-	min-width: 990px;
 }
 
 .wrapper {
-	width: 85%;
-	min-width: 970px;
-	max-width: 1500px;
-	margin: auto auto;
+	width: 90%;
+	max-width: 1680px;
+	margin: auto;
 }
 
 #logo {
