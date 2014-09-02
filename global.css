@@ -8,14 +8,14 @@ strong:before {
 }
 
 body {
+	overflow-y: scroll;
+	margin: 0;
 	background: #FFF;
 	color: #333;
-	text-align: center;
-	line-height: 1.4;
-	margin: 0;
 	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
 	font-size: 13px;
-	overflow-y: scroll;
+	line-height: 1.4;
+	text-align: center;
 }
 
 a:link {
@@ -35,15 +35,13 @@ a:active {
 }
 
 #container {
+	margin: 0;
 	color: #333;
 	text-align: left;
-	line-height: 1.4;
-	margin: 0;
-	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
-	font-size: 13px;
 }
 
 .wrapper {
+    overflow: auto;
 	width: 90%;
 	max-width: 1680px;
 	margin: auto;
@@ -56,10 +54,10 @@ a:active {
 }
 
 #content {
-	background: #FFF;
+	overflow: hidden;
 	width: auto !important;
 	padding: 20px 10px;
-	overflow: hidden;
+	background: #FFF;
 }
 
 #header ul.menu {
@@ -202,10 +200,6 @@ a:active {
 	color: #FFF;
 }
 
-#search input {
-	margin: -3px 0;
-}
-
 #quick_login .remember_me input {
 	vertical-align: middle;
 	margin: -3px 0 0 5px;
@@ -244,7 +238,6 @@ a:active {
 
 #footer .upper .language {
 	float: right;
-	margin: -1px;
 	margin-left: 15px;
 }
 
@@ -254,7 +247,6 @@ a:active {
 
 #footer .upper .theme {
 	float: right;
-	margin: -1px;
 	margin-left: 15px;
 }
 
