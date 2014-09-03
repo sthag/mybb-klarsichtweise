@@ -6,13 +6,13 @@
  */
 
 // The friendly name of the language
-$langinfo['name'] = "English (American)";
+$langinfo['name'] = "English (New)";
 
 // The author of the language
-$langinfo['author'] = "MyBB Group";
+$langinfo['author'] = "sthag";
 
 // The language authors website
-$langinfo['website'] = "http://www.mybb.com/";
+$langinfo['website'] = "http://interaktionsweise.de/";
 
 // Compatible version of MyBB
 $langinfo['version'] = "1800";

@@ -5,7 +5,7 @@
  *
  */
 
-$l['contact'] = 'Contact Us';
+$l['contact'] = 'Contact us';
 $l['contact_no_message'] = 'You have not provided a message to send.';
 $l['contact_no_subject'] = 'You are required to enter a subject.';
 $l['contact_no_email'] = 'You must enter a valid email address.';
