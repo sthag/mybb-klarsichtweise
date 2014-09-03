@@ -32,9 +32,9 @@ $l['welcome_newposts'] = "View New Posts";
 $l['welcome_todaysposts'] = "View Today's Posts";
 $l['welcome_pms'] = "Private Messages";
 $l['welcome_pms_usage'] = "(Unread {1}, Total {2})";
-$l['welcome_back'] = "<strong>Welcome back, {1}</strong>. You last visited: {2}";
+$l['welcome_back'] = "Welcome back, {1}. You last visited: {2}";
 $l['welcome_guest'] = "Hello There, Guest!";
-$l['welcome_current_time'] = "<strong>Current time:</strong> {1}";
+$l['welcome_current_time'] = "Current time: {1}";
 
 $l['moved_prefix'] = "Moved:";
 $l['poll_prefix'] = "Poll:";
@@ -358,7 +358,7 @@ $l['banned_lifted_never'] = "Never";
 $l['banned_email_warning'] = "You are currently using an email that is not allowed to be used on this forum. Please reset it before continuing.";
 $l['powered_by'] = "Powered by";
 $l['copyright'] = "Copyright";
-$l['attach_quota'] = "You are currently using <strong>{1}</strong> of your allocated attachment usage ({2})";
+$l['attach_quota'] = "You are currently using {1} of your allocated attachment usage ({2})";
 $l['view_attachments'] = "[View My Attachments]";
 $l['unlimited'] = "Unlimited";
 
@@ -383,8 +383,8 @@ $l['with_trout'] = "around a bit with a large trout.";
 $l['mybb_engine'] = "MyBB Engine";
 $l['quickdelete_confirm'] = "Are you sure you want to delete this post?";
 $l['quickrestore_confirm'] = "Are you sure you want to restore this post?";
-$l['newpm_notice_one'] = "<strong>You have one unread private message</strong> from {1} titled <a href=\"{2}/private.php?action=read&amp;pmid={3}\" style=\"font-weight: bold;\">{4}</a>";
-$l['newpm_notice_multiple'] = "<strong>You have {1} unread private messages.</strong> The most recent is from {2} titled <a href=\"{3}/private.php?action=read&amp;pmid={4}\" style=\"font-weight: bold;\">{5}</a>";
+$l['newpm_notice_one'] = "You have one unread private message from {1} titled <a href=\"{2}/private.php?action=read&amp;pmid={3}\" style=\"font-weight: bold;\">{4}</a>";
+$l['newpm_notice_multiple'] = "You have {1} unread private messages. The most recent is from {2} titled <a href=\"{3}/private.php?action=read&amp;pmid={4}\" style=\"font-weight: bold;\">{5}</a>";
 $l['deleteevent_confirm'] = "Are you sure you want to delete this event?";
 $l['removeattach_confirm'] = "Are you sure you want to remove the selected attachment from this post?";
 
