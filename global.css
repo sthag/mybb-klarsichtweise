@@ -166,18 +166,18 @@ a:active {
 	background-position: 0 -180px;
 }
 
-#panel .upper a.logout {
+#panel .upper a.logout, #panel .upper a.register {
 	margin-left: 8px;
 	padding: 6px 8px;
 	font-weight: bold;
 }
 
-#panel .upper a.logout:link, #panel .upper a.logout:visited {
+#panel .upper a.logout:link, #panel .upper a.logout:visited, #panel .upper a.register:link, #panel .upper a.register:visited {
     background-color: transparent;
     color: #5FA449;
 }
 
-#panel .upper a.logout:hover, #panel .upper a.logout:active {
+#panel .upper a.logout:hover, #panel .upper a.logout:active, #panel .upper a.register:hover, #panel .upper a.register:active {
     background-color: #457F32;
     color: #FFF;
     text-decoration: none;
@@ -187,13 +187,6 @@ a:active {
 #panel .upper a.lost_password {
 	background: url(images/headerlinks_sprite.png) 0 -100px no-repeat;
 	padding-left: 20px;
-	margin-left: 10px;
-	font-weight: bold;
-}
-
-#panel .upper a.register {
-	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
-	padding-right: 20px;
 	margin-left: 10px;
 	font-weight: bold;
 }
@@ -276,6 +269,10 @@ a:active {
 #search input.button {
 	background: #0066A2 url(images/thead.png) top left repeat-x;
 	color: #FFF;
+}
+
+#quick_login {
+	display: none;
 }
 
 #quick_login .remember_me input {
