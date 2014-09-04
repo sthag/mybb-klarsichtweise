@@ -1,9 +1,5 @@
-<div class="float_left">
-	{$multipage}
-</div>
-<div class="float_right">
-	{$newthread}
-</div>
+{$multipage}
+{$newthread}
 <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder clear">
 	<tr>
 		<td class="thead" colspan="{$colspan}">
@@ -61,13 +57,14 @@
 		</td>
 	</tr>
 </table>
-<div class="float_left">
-	{$multipage}
+{$newthread}
+{$multipage}
+<div class="right-box action-box stopper">
+    {$inlinemod}
+    {$searchforum}
+    {$forumjump}
 </div>
-<div class="float_right" style="margin-top: 4px;">
-	{$newthread}
-</div>
-<br class="clear" />
+{$inline_edit_js}
 <div class="left-box legend-box stopper">
     <dl class="thread_legend float_left smalltext">
         <dd><span class="thread_status newfolder" title="{$lang->new_thread}">&nbsp;</span> {$lang->new_thread}</dd>
@@ -82,9 +79,3 @@
         <dd><span class="thread_status lockfolder" title="{$lang->locked_thread}">&nbsp;</span> {$lang->locked_thread}</dd>
     </dl>
 </div>
-<div class="right-box action-box stopper">
-    {$inlinemod}
-    {$searchforum}
-    {$forumjump}
-</div>
-{$inline_edit_js}
