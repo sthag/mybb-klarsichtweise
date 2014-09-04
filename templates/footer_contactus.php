@@ -1,0 +1,1 @@
+<a href="{$mybb->settings['contactlink']}">{$lang->bottomlinks_contactus}</a>
