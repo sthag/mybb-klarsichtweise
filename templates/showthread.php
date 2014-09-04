@@ -26,13 +26,14 @@
 </head>
 <body>
 	{$header}
+	{$usersbrowsing}
 	{$threadnotesbox}
 	{$pollbox}
 	{$multipage}
-	<div class="float_right">
+	<div class="stopper">
 		{$newreply}
+        {$ratethread}
 	</div>
-	{$ratethread}
 	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder tfixed clear">
 		<tr>
 			<td class="thead">
@@ -44,11 +45,13 @@
 				</div>
 			</td>
 		</tr>
-<tr><td id="posts_container">
-	<div id="posts">
-		{$posts}
-	</div>
-</td></tr>
+        <tr>
+            <td id="posts_container">
+                <div id="posts">
+                    {$posts}
+                </div>
+            </td>
+        </tr>
 		<tr>
 			<td class="tfoot">
 				{$search_thread}
@@ -58,16 +61,14 @@
 			</td>
 		</tr>
 	</table>
-	{$multipage}
-	<div style="padding-top: 4px;" class="float_right">
+	<div class="stopper">
 		{$newreply}
 	</div>
-	<br class="clear" />
+	{$multipage}
 	{$quickreply}
 	{$threadexbox}
 	{$similarthreads}
-	<br />
-	<div class="float_left">
+	<div class="left-box action-box">
 		<ul class="thread_tools">
 			<li class="printable"><a href="printthread.php?tid={$tid}">{$lang->view_printable}</a></li>
 			{$sendthread}
@@ -75,13 +76,10 @@
 			{$addpoll}
 		</ul>
 	</div>
-
-	<div class="float_right" style="text-align: right;">
+	<div class="right-box action-box stopper">
 		{$moderationoptions}
 		{$forumjump}
 	</div>
-	<br class="clear" />
-	{$usersbrowsing}
 	{$footer}
 	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="showthread.php?mode=linear&amp;tid={$tid}&amp;pid={$pid}#pid{$pid}" class="popup_item">{$lang->linear}</a></div><div class="popup_item_container"><a href="showthread.php?mode=threaded&amp;tid={$tid}&amp;pid={$pid}#pid{$pid}" class="popup_item">{$lang->threaded}</a></div></div>
 	<script type="text/javascript">

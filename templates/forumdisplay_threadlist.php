@@ -65,16 +65,16 @@
     {$forumjump}
 </div>
 {$inline_edit_js}
-<div class="left-box legend-box stopper">
-    <dl class="thread_legend float_left smalltext">
+<div class="left-box legend-box smalltext">
+    <dl class="thread_legend float_left">
         <dd><span class="thread_status newfolder" title="{$lang->new_thread}">&nbsp;</span> {$lang->new_thread}</dd>
         <dd><span class="thread_status newhotfolder" title="{$lang->new_hot_thread}">&nbsp;</span> {$lang->new_hot_thread}</dd>
     </dl>
-    <dl class="thread_legend float_left smalltext">
+    <dl class="thread_legend float_left">
         <dd><span class="thread_status hotfolder" title="{$lang->hot_thread}">&nbsp;</span> {$lang->hot_thread}</dd>
         <dd><span class="thread_status folder" title="{$lang->no_new_thread}">&nbsp;</span> {$lang->no_new_thread}</dd>
     </dl>
-    <dl class="thread_legend float_left smalltext">
+    <dl class="thread_legend float_left">
         <dd><span class="thread_status dot_folder" title="{$lang->posts_by_you}">&nbsp;</span> {$lang->posts_by_you}</dd>
         <dd><span class="thread_status lockfolder" title="{$lang->locked_thread}">&nbsp;</span> {$lang->locked_thread}</dd>
     </dl>

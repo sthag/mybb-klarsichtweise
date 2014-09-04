@@ -87,15 +87,12 @@ a:active {
     margin-bottom: 32px;
 }
 
-.post-thread-box {
-    border-width: 0 4px 0 0;
-    border-style: solid;
-    border-color: crimson;
-    text-align: right;
-}
-
 .about-box {
     margin-bottom: 64px;
+}
+
+.quick-reply-box {
+    margin: 32px 0;
 }
 
 .center-box, .left-box, .right-box {
@@ -114,6 +111,13 @@ a:active {
 
 .right-box {
     border-width: 0 4px 0 0;
+    text-align: right;
+}
+
+.post-thread-box {
+    border-width: 0 4px 0 0;
+    border-style: solid;
+    border-color: crimson;
     text-align: right;
 }
 
@@ -274,7 +278,8 @@ a:active {
 }
 
 #search input.button {
-	background: #0066A2 url(images/thead.png) top left repeat-x;
+    float: right;
+	background: #0066A2;
 	color: #FFF;
 }
 
@@ -357,7 +362,6 @@ a:active {
 #footer .lower a:hover,
 #footer .lower a:active {
 	color: #444;
-	text-decoration: underline;
 }
 
 #footer .lower #current_time {
@@ -447,18 +451,15 @@ table {
 
 .thead a:link {
 	color: #FFF;
-	text-decoration: none;
 }
 
 .thead a:visited {
 	color: #FFF;
-	text-decoration: none;
 }
 
 .thead a:hover,
 .thead a:active {
 	color: #FFF;
-	text-decoration: underline;
 }
 
 .tcat {
@@ -559,18 +560,15 @@ tr.trow_selected td {
 
 .tfoot a:link {
 	color: #444;
-	text-decoration: none;
 }
 
 .tfoot a:visited {
 	color: #444;
-	text-decoration: none;
 }
 
 .tfoot a:hover,
 .tfoot a:active {
 	color: #444;
-	text-decoration: underline;
 }
 
 .thead input.textbox,
@@ -1097,8 +1095,8 @@ div.error ul {
 }
 
 .thread_legend dd {
-	padding-bottom: 4px;
-	margin-right: 15px;
+	padding-bottom: 8px;
+	margin-right: 16px;
 }
 
 .thread_legend dd:last-child {
@@ -1110,10 +1108,9 @@ div.error ul {
 	vertical-align: bottom;
 }
 
-.forum_legend {
+.forum_legend, .legend-box {
 	overflow: auto;
-    margin: 0 0 32px 0;
-    padding: 0;
+    margin: 32px 0;
     color: #BBB;
 }
 
@@ -1417,6 +1414,7 @@ a.button.small_button {
 }
 
 a.button.new_reply_button {
+    float: right;
 	border-right: 4px solid crimson;
 }
 
