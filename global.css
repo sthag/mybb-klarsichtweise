@@ -11,20 +11,20 @@
 }
 
 .center-box p:first-child, .left-box p:first-child, .right-box p:first-child {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .center-box p:last-child, .left-box p:last-child, .right-box p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 strong {
-    font-weight: normal !important;
+	font-weight: normal !important;
 }
 
 strong:before {
-    content: "!";
-    color: crimson;
+	content: "!";
+	color: crimson;
 }
 
 body {
@@ -61,64 +61,64 @@ a:active {
 }
 
 .wrapper {
-    overflow: auto;
+	overflow: auto;
 	width: 90%;
 	max-width: 1680px;
 	margin: auto;
 }
 
 .stopper {
-    overflow: auto;
+	overflow: auto;
 }
 
 .about-box, .forum_legend, .legend-box {
-    border-color: #EFEFEF;
+	border-color: #EFEFEF;
 }
 
 .navigation, .users-browsing-box, .pagination, .action-box {
-    border-color: #BBB;
+	border-color: #BBB;
 }
 
 .debug-box {
-    border-color: crimson;
+	border-color: crimson;
 }
 
 #footer .upper {
-    margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .about-box {
-    margin-bottom: 64px;
+	margin-bottom: 64px;
 }
 
 .quick-reply-box {
-    margin: 32px 0;
+	margin: 32px 0;
 }
 
 .center-box, .left-box, .right-box {
-    border-style: solid;
-    padding: 8px;
+	border-style: solid;
+	padding: 8px;
 }
 
 .center-box {
-    border-width: 0 4px;
-    text-align: center;
+	border-width: 0 4px;
+	text-align: center;
 }
 
 .left-box {
-    border-width: 0 0 0 4px;
+	border-width: 0 0 0 4px;
 }
 
 .right-box {
-    border-width: 0 4px 0 0;
-    text-align: right;
+	border-width: 0 4px 0 0;
+	text-align: right;
 }
 
 .post-thread-box {
-    border-width: 0 4px 0 0;
-    border-style: solid;
-    border-color: crimson;
-    text-align: right;
+	border-width: 0 4px 0 0;
+	border-style: solid;
+	border-color: crimson;
+	text-align: right;
 }
 
 #logo {
@@ -184,14 +184,14 @@ a:active {
 }
 
 #panel .upper a.logout:link, #panel .upper a.logout:visited, #panel .upper a.register:link, #panel .upper a.register:visited {
-    background-color: transparent;
-    color: #5FA449;
+	background-color: transparent;
+	color: #5FA449;
 }
 
 #panel .upper a.logout:hover, #panel .upper a.logout:active, #panel .upper a.register:hover, #panel .upper a.register:active {
-    background-color: #457F32;
-    color: #FFF;
-    text-decoration: none;
+	background-color: #457F32;
+	color: #FFF;
+	text-decoration: none;
 }
 
 #panel .upper a.login,
@@ -258,9 +258,9 @@ a:active {
 }
 
 .welcome {
-    margin: 0;
-    padding: 6px 0;
-    line-height: 20px;
+	margin: 0;
+	padding: 6px 0;
+	line-height: 20px;
 }
 
 #search {
@@ -274,11 +274,11 @@ a:active {
 #search input.button,
 #search input.textbox {
 	border-color: #000;
-    line-height: 20px;
+	line-height: 20px;
 }
 
 #search input.button {
-    float: right;
+	float: right;
 	background: #0066A2;
 	color: #FFF;
 }
@@ -297,14 +297,14 @@ a:active {
 }
 
 #footer ul.menu {
-    overflow: auto;
+	overflow: auto;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 #footer ul.menu li {
-    float: left;
+	float: left;
 	margin: 6px 5px;
 }
 
@@ -365,12 +365,12 @@ a:active {
 }
 
 #footer .lower #current_time {
-    color: #888;
+	color: #888;
 }
 
 #debug {
 	margin-top: 16px;
-    color: #888;
+	color: #888;
 }
 
 .scaleimages img {
@@ -601,20 +601,20 @@ tr.trow_selected td {
 }
 
 .users-browsing-box a {
-    display: inline-block;
-    padding: 1px;
+	display: inline-block;
+	padding: 1px;
 }
 
 .users-browsing-box a:hover, .users-browsing-box a:active {
-    padding: 1px;
-    background-color: #000;
-    color: #FFF;
-    text-decoration: none;
+	padding: 1px;
+	background-color: #000;
+	color: #FFF;
+	text-decoration: none;
 }
 
 .smalltext {
 	font-size: 11px;
-    line-height: 16px;
+	line-height: 16px;
 }
 
 .largetext {
@@ -623,8 +623,8 @@ tr.trow_selected td {
 }
 
 .bigtext {
-    font-size: 18px;
-    line-height: 24px;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 fieldset {
@@ -723,7 +723,7 @@ form label.error {
 }
 
 form #message {
-    width: 500px;
+	width: 500px;
 }
 
 .editor {
@@ -996,7 +996,7 @@ blockquote cite span.highlight {
 }
 
 div.error {
-    margin: 16px 0;
+	margin: 16px 0;
 	padding: 8px;
 	border-top: 4px solid #FFD324;
 	border-bottom: 4px solid #FFD324;
@@ -1021,9 +1021,9 @@ div.error ul {
 }
 
 .pagination {
-    padding: 8px;
-    border-width: 0 0 0 4px;
-    border-style: solid;
+	padding: 8px;
+	border-width: 0 0 0 4px;
+	border-style: solid;
 }
 
 .tfoot .pagination,
@@ -1033,7 +1033,7 @@ div.error ul {
 .pagination .pages,
 .pagination .pagination_current,
 .pagination a {
-    display: inline-block;
+	display: inline-block;
 }
 
 .pagination .pagination_current,
@@ -1110,8 +1110,8 @@ div.error ul {
 
 .forum_legend, .legend-box {
 	overflow: auto;
-    margin: 32px 0;
-    color: #BBB;
+	margin: 32px 0;
+	color: #BBB;
 }
 
 .forum_legend dt,
@@ -1127,7 +1127,7 @@ div.error ul {
 .forum_legend dd {
 	margin: 0 16px 0 0;
 	padding: 0;
-    line-height: 32px;
+	line-height: 32px;
 }
 
 .success_message {
@@ -1405,7 +1405,7 @@ a.button:active {
 	background-color: #1E1E1E;
 	color: #FFF;
 	font-size: 14px;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 a.button.small_button {
@@ -1414,7 +1414,7 @@ a.button.small_button {
 }
 
 a.button.new_reply_button {
-    float: right;
+	float: right;
 	border-right: 4px solid crimson;
 }
 

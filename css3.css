@@ -53,19 +53,19 @@ tr td.trow_shaded:last-child {
 .thead_left {
 	-moz-border-radius-topright: 0;
 	-webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .thead_right {
 	-moz-border-radius-topleft: 0;
 	-webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
+	border-top-left-radius: 0;
 }
 
 .tcat_menu {
 	-moz-border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
-  	border-radius: 0 !important;
+	border-radius: 0 !important;
 }
 
 .tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {

@@ -32,7 +32,7 @@
 	{$multipage}
 	<div class="stopper">
 		{$newreply}
-        {$ratethread}
+		{$ratethread}
 	</div>
 	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder tfixed clear">
 		<tr>
@@ -45,13 +45,13 @@
 				</div>
 			</td>
 		</tr>
-        <tr>
-            <td id="posts_container">
-                <div id="posts">
-                    {$posts}
-                </div>
-            </td>
-        </tr>
+		<tr>
+			<td id="posts_container">
+				<div id="posts">
+					{$posts}
+				</div>
+			</td>
+		</tr>
 		<tr>
 			<td class="tfoot">
 				{$search_thread}
