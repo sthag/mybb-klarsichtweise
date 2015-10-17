@@ -1,5 +1,5 @@
 						<!-- Continuation of div(class="upper") as opened in the header template -->
-						<p class="welcome">{$lang->welcome_guest} <a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true }); return false;" class="login">{$lang->welcome_login}</a> <a href="{$mybb->settings['bburl']}/member.php?action=register" class="register">{$lang->welcome_register}</a></p>
+						<p class="welcome">{$lang->welcome_guest} <a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">{$lang->welcome_login}</a> <a href="{$mybb->settings['bburl']}/member.php?action=register" class="register">{$lang->welcome_register}</a></p>
 					</div>
 				</div>
 				<div class="modal" id="quick_login">
