@@ -1,1 +1,0 @@
-<span class="bigtext active">{$navbit['name']}</span>
