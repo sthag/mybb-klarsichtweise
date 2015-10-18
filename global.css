@@ -1,3 +1,16 @@
+/*
+NOTE
+Highlight strong tags which are often placed into the language file and thus cannot be edited by a theme
+*/
+strong {
+	font-weight: normal !important;
+}
+
+strong:before {
+	content: "!";
+	color: crimson;
+}
+
 body {
 	background: #FFF;
 	color: #333;
