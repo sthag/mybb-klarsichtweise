@@ -1,0 +1,20 @@
+@mixin align-flex-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@mixin align-flex-left {
+  -webkit-flex-flow: row nowrap;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: row;
+  -ms-flex-wrap: nowrap;
+  align-items: flex-start;
+}

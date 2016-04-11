@@ -1,0 +1,31 @@
+// Global configuration with default values
+// ------------------------------------------------------------------------------
+@import "config";
+
+// Reset
+// ------------------------------------------------------------------------------
+@import "other/normalize.min.css";
+
+// Modules and variables
+// get all modules or define individual ones here
+// ------------------------------------------------------------------------------
+@import "modules/flexbox";
+@import "modules/vendor";
+
+//@import modules/all deprecated because of the new vendor mixin
+//@import modules/*/* needs sass-glob
+
+// This is where own styles are assembled
+// ------------------------------------------------------------------------------
+@import "color/color";
+@import "typo/typo";
+@import "admin/admin";
+@import "io/io";
+@import "layout/layout";
+
+// Additional foreign styles
+// ------------------------------------------------------------------------------
+@import "modules/mybb-extras/mybb-extras";
+
+
+// No css rules allowed in here

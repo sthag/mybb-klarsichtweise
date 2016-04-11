@@ -1,0 +1,20 @@
+// Custom extends and mixins
+// ------------------------------------------------------------------------------
+@import "mixins";
+@import "extends";
+
+// Admin styles
+// ------------------------------------------------------------------------------
+/*
+NOTE
+Highlight strong tags which are often placed into the language file and thus cannot be edited by a theme
+*/
+strong {
+	font-weight: normal !important;
+}
+
+strong:before {
+	content: "!";
+	color: crimson;
+}
+

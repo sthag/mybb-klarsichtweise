@@ -1,3 +1,10 @@
+# =========================
+# Operating System Files
+# =========================
+
+# Windows
+# =========================
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -14,10 +21,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# =========================
-# Operating System Files
-# =========================
-
 # OSX
 # =========================
 
@@ -26,7 +29,7 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -34,3 +37,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# =========================
+# Own files
+# =========================
+
+material/
+.sass-cache/
