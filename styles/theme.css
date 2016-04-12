@@ -126,7 +126,7 @@ body {
   font-size: 1.3rem;
   line-height: 1.82rem; }
 
-.wrapper {
+.wrapper, #header header {
   width: 90%;
   min-width: 970px;
   max-width: 1680px;
@@ -134,12 +134,14 @@ body {
 
 /* HEADER START */
 #header header {
-  margin: 3.2rem 0; }
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  display: flex; }
 
 #logo {
   display: block;
   overflow: hidden;
-  float: left;
+  flex: 1;
   margin-right: 1.6rem; }
   #logo img {
     float: left;
@@ -151,9 +153,8 @@ body {
       border-color: black; }
 
 #header .menu {
-  overflow: auto;
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none; }
   #header .menu li {
     float: left; }
@@ -162,33 +163,49 @@ body {
       background-repeat: no-repeat; }
 
 #header .top_links {
-  margin: -10px 0 0; }
+  flex: 0 0 auto;
+  overflow: auto; }
+  #header .top_links li {
+    padding: 1.6rem 0;
+    border-width: 0.4rem 0;
+    border-style: solid;
+    border-color: transparent; }
+    #header .top_links li:hover {
+      border-color: black; }
   #header .top_links a {
     display: block;
-    float: left;
-    margin-right: 4px;
-    padding: 16px;
-    border-width: 4px 0;
-    border-style: solid;
-    border-color: transparent;
+    margin-right: 0.4rem;
+    padding: 0 1.6rem;
     text-decoration: none; }
     #header .top_links a:hover {
-      border-color: black;
       text-decoration: none; }
   #header .top_links span {
     display: inline-block;
-    width: 16px;
-    height: 16px; }
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 8px; }
+  #header .top_links .sub-menu li:first-child {
+    padding-top: 0; }
+  #header .top_links .sub-menu li {
+    float: none;
+    padding-bottom: 0;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    border: 0; }
   #header .top_links .search span {
     background-position: 0 0; }
-  #header .top_links .memberlist span {
-    background-position: 0 -20px; }
+  #header .top_links .members span {
+    background-position: 0 -16px; }
   #header .top_links .calendar span {
-    background-position: 0 -40px; }
+    background-position: 0 -32px; }
   #header .top_links .help span {
-    background-position: 0 -60px; }
+    background-position: 0 -48px; }
   #header .top_links .portal span {
     background-position: 0 -144px; }
+  #header .top_links .smiley span {
+    background-position: 0 -160px; }
+  #header .top_links .statistics span {
+    background-position: 0 -176px; }
 
 #panel .upper a.logout {
   font-weight: bold;

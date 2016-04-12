@@ -29,20 +29,23 @@ body {
 
 /* HEADER START */
 #header header {
-	margin: 3.2rem 0;
+	@extend .wrapper;
+	margin-top: $mid-space;
+	margin-bottom: $mid-space;
+	display: flex;
 }
 
 #logo {
 	display: block;
 	overflow: hidden;
-	float: left;
-	margin-right: 1.6rem;
+	flex: 1;
+	margin-right: $base-space;
 	img {
 		float: left;
-		border-width: 0 0 0 0.4rem;
+		border-width: 0 0 0 $base-border-width;
 		border-style: solid;
 		border-color: #666;
-		padding: 1.6rem;
+		padding: $base-space;
 		&:hover {
 			border-color: $alpha_bw;
 		}
@@ -50,9 +53,8 @@ body {
 }
 
 #header .menu {
-	overflow: auto;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	list-style: none;
 	li {
 		float: left;
@@ -64,40 +66,64 @@ body {
 }
 
 #header .top_links {
-	margin: -10px 0 0;
-	a {
-		display: block;
-		float: left;
-		margin-right: 4px;
-		padding: 16px;
-		border-width: 4px 0;
+	flex: 0 0 auto;
+	overflow: auto;
+	li {
+		padding: $base-space 0;
+		border-width: $base-border-width 0;
 		border-style: solid;
 		border-color: transparent;
-		text-decoration: none;
 		&:hover {
 			border-color: $alpha_bw;
+		}
+	}
+	a {
+		display: block;
+		margin-right: $small-space;
+		padding: 0 $base-space;
+		text-decoration: none;
+		&:hover {
 			text-decoration: none;
 		}
 	}
 	span {
 		display: inline-block;
-		width: 16px;
-		height: 16px;
+		width: $base-space;
+		height: $base-space;
+		margin-bottom: 8px;
+	}
+	.sub-menu {
+		li:first-child {
+			padding-top: 0;
+		}
+		li {
+			float: none;
+			padding-bottom: 0;
+			padding-right: $base-space;
+			padding-left: $base-space;
+			border: 0;
+		}
 	}
 	.search span {
 		background-position: 0 0;
 	}
-	.memberlist span {
-		background-position: 0 -20px;
+	.members span {
+		background-position: 0 -16px;
 	}
 	.calendar span {
-		background-position: 0 -40px;
+		background-position: 0 -32px;
 	}
 	.help span {
-		background-position: 0 -60px;
+		background-position: 0 -48px;
 	}
 	.portal span {
 		background-position: 0 -144px;
+	}
+	.smiley span {
+		background-position: 0 -160px;
+	}
+	.statistics span {
+		background-position: 0 -176px;
 	}
 }
 
