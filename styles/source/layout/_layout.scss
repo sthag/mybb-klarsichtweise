@@ -8,5 +8,203 @@
 //  @include vendor-prefix(box-sizing, border-box);
 }
 
+body {
+	background: $white;
+	color: $india_bw;
+	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: $font_size;
+	line-height: $line;
+}
+
+.wrapper {
+	width: 90%;
+	min-width: 970px;
+	max-width: 1680px;
+	margin: 0 auto;
+}
+
 // Layout elements
 // ------------------------------------------------------------------------------
+
+
+/* HEADER START */
+#header header {
+	margin: 3.2rem 0;
+}
+
+#logo {
+	display: block;
+	overflow: hidden;
+	float: left;
+	margin-right: 1.6rem;
+	img {
+		float: left;
+		border-width: 0 0 0 0.4rem;
+		border-style: solid;
+		border-color: #666;
+		padding: 1.6rem;
+		&:hover {
+			border-color: $alpha_bw;
+		}
+	}
+}
+
+#header .menu {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li {
+		float: left;
+		span {
+			background-image: url(images/klarsichtweise/nav-top-sprite.png);
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+#header .top_links {
+	margin: -10px 0 0;
+	a {
+		display: block;
+		float: left;
+		margin-right: 4px;
+		padding: 16px;
+		border-width: 4px 0;
+		border-style: solid;
+		border-color: transparent;
+		text-decoration: none;
+		&:hover {
+			border-color: $alpha_bw;
+			text-decoration: none;
+		}
+	}
+	span {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+	.search span {
+		background-position: 0 0;
+	}
+	.memberlist span {
+		background-position: 0 -20px;
+	}
+	.calendar span {
+		background-position: 0 -40px;
+	}
+	.help span {
+		background-position: 0 -60px;
+	}
+	.portal span {
+		background-position: 0 -144px;
+	}
+}
+
+#panel .upper a.logout {
+	font-weight: bold;
+	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+#panel .upper a.login,
+#panel .upper a.lost_password {
+	background: url(images/headerlinks_sprite.png) 0 -100px no-repeat;
+	padding-left: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .upper a.register {
+	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .lower ul.panel_links {
+	float: left;
+}
+
+#panel .lower ul.panel_links a.usercp {
+	background-position: 0 -120px;
+}
+
+#panel .lower ul.panel_links a.modcp {
+	background-position: 0 -140px;
+}
+
+#panel .lower ul.panel_links a.admincp {
+	background-position: 0 -160px;
+}
+
+#panel .lower ul.user_links {
+	float: right;
+}
+
+#panel .lower ul.user_links li a {
+	padding: 0;
+	background-image: none;
+}
+
+#panel .upper {
+	background: #0F0F0F url(images/tcat.png) repeat-x;
+	color: #FFF;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	padding: 7px;
+	clear: both;
+}
+
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #FFF;
+}
+
+#panel .lower {
+	background: #EFEFEF;
+	color: #999;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #CCC;
+	padding: 5px;
+}
+
+#panel .lower a:link,
+#panel .lower a:visited,
+#panel .lower a:hover,
+#panel .lower a:active {
+	color: #666;
+}
+
+#search {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+	vertical-align: middle;
+}
+
+#search input.button,
+#search input.textbox {
+	border-color: #000;
+}
+
+#search input.button {
+	background: #0066A2 url(images/thead.png) top left repeat-x;
+	color: #FFF;
+}
+
+#search input {
+	margin: -3px 0;
+}
+
+#quick_login .remember_me input {
+	vertical-align: middle;
+	margin: -3px 0 0 5px;
+}
+
+/* HEADER END */
+
