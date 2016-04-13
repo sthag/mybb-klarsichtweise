@@ -16,5 +16,5 @@
 			<li><a href="{$mybb->settings['bburl']}/private.php">{$lang->welcome_pms}</a> {$lang->welcome_pms_usage}</li>
 		</ul>
 	</div>
-	<br class="clear" />
+<!--	<br class="clear" />-->
 </div>

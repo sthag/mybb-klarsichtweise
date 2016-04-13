@@ -1,0 +1,665 @@
+/**
+ * @description
+ * Generates flexbox properties for a given element
+ *
+ * @author romamatusevich
+ *
+ * @link MDN https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes
+ * @link css-tricks http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ * @link spec http://www.w3.org/TR/css3-flexbox/
+ */
+/**
+ * @returns
+ *   display: -webkit-box;
+ *   display: -moz-box;
+ *   display: -ms-flexbox;
+ *   display: -webkit-flex;
+ *   display: flex;
+ *
+ * @example
+ *   .selector {
+ *     @include x-display-flex;
+ *   }
+ */
+/**
+ * @param values
+ * @returns
+ *   -webkit-box-flex: <values>;
+ *      -moz-box-flex: <values>;
+ *       -webkit-flex: <values>;
+ *           -ms-flex: <values>;
+ *               flex: <values>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-flex(1 1 auto);
+ *   }
+ */
+/**
+ * @param value
+ * @returns
+ *   -webkit-box-ordinal-group: <value>;
+ *      -moz-box-ordinal-group: <value>;
+ *              -ms-flex-order: <value>;
+ *               -webkit-order: <value>;
+ *                       order: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-order(1);
+ *   }
+ */
+/**
+ * @param value
+ * @returns
+ *    -webkit-flex-wrap: <value>;
+ *        -ms-flex-wrap: <value>;
+ *            flex-wrap: <value>;
+ *
+ * @example
+ *   .selector {
+ *     @include x-flex-wrap(wrap);
+ *   }
+ */
+/**
+ * @param value
+ * @returns
+ *   -webkit-align-content: <value>;
+ *      -moz-align-content: <value>;
+ *      -ms-flex-line-pack: <value>;
+ *           align-content: <value>;
+ * @example
+ *   .selector {
+ *     @include x-align-content(center);
+ *   }
+ */
+/**
+ * @param value
+ * @returns
+ *	  -webkit-box-direction: <value>;
+ *		 -moz-box-direction: <value>;
+ *       -webkit-box-orient: <value>;
+ *		    -moz-box-orient: <value>;
+ *   -webkit-flex-direction: <value>;
+ *      -moz-flex-direction: <value>;
+ *       -ms-flex-direction: <value>;
+ *           flex-direction: <value>;
+ * @example
+ *   .selector {
+ *     @include x-flex-direction(row-reverse);
+ *   }
+ */
+/* ToDo: add flex-grow, flex-shrink, flex-basis, flex-flow, align-items, align-self, justify-content mixins */
+/**
+ * @description
+ * Generates cross-browser-compatible output for a given element with its value.
+ *
+ * @author sthag
+ *
+ * @param values
+ * @returns
+ *   -webkit-<name>: <values>
+ *       ...-<name>: <values>
+ *
+ * @example
+ *   .selector
+ *     +vendor-prefix(hyphens, auto)
+ */
+html {
+  font-size: 62.5%; }
+
+/*
+NOTE
+Highlight strong tags which are often placed into the language file and thus cannot be edited by a theme
+*/
+strong {
+  font-weight: normal !important; }
+
+strong:before {
+  content: "!";
+  color: crimson; }
+
+body {
+  background: white;
+  color: #cccccc;
+  font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, Sans-Serif;
+  font-size: 1.3rem;
+  line-height: 1.82rem; }
+
+.wrapper, #header header {
+  width: 90%;
+  min-width: 970px;
+  max-width: 1680px;
+  margin: 0 auto; }
+
+/* HEADER START */
+#header header {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  display: flex; }
+
+#logo {
+  display: block;
+  overflow: hidden;
+  flex: 1;
+  margin-right: 1.6rem; }
+  #logo img {
+    float: left;
+    border-width: 0 0 0 0.4rem;
+    border-style: solid;
+    border-color: #666;
+    padding: 1.6rem; }
+    #logo img:hover {
+      border-color: black; }
+
+#header .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #header .menu li {
+    float: left; }
+    #header .menu li span {
+      background-image: url(images/klarsichtweise/nav-top-sprite.png);
+      background-repeat: no-repeat; }
+
+#header .top_links {
+  flex: 0 0 auto;
+  overflow: auto; }
+  #header .top_links li {
+    padding: 1.6rem 0;
+    border-width: 0.4rem 0;
+    border-style: solid;
+    border-color: transparent; }
+    #header .top_links li:hover {
+      border-color: black; }
+  #header .top_links a {
+    display: block;
+    margin-right: 0.4rem;
+    padding: 0 1.6rem;
+    text-decoration: none; }
+    #header .top_links a:hover {
+      text-decoration: none; }
+  #header .top_links span {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 8px; }
+  #header .top_links .sub-menu li:first-child {
+    padding-top: 0; }
+  #header .top_links .sub-menu li {
+    float: none;
+    padding-bottom: 0;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    border: 0; }
+  #header .top_links .search span {
+    background-position: 0 0; }
+  #header .top_links .members span {
+    background-position: 0 -16px; }
+  #header .top_links .calendar span {
+    background-position: 0 -32px; }
+  #header .top_links .help span {
+    background-position: 0 -48px; }
+  #header .top_links .portal span {
+    background-position: 0 -144px; }
+  #header .top_links .smiley span {
+    background-position: 0 -160px; }
+  #header .top_links .statistics span {
+    background-position: 0 -176px; }
+
+#panel .upper a.logout {
+  font-weight: bold;
+  background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+  padding-right: 20px;
+  margin-left: 10px; }
+
+#panel .upper a.login,
+#panel .upper a.lost_password {
+  background: url(images/headerlinks_sprite.png) 0 -100px no-repeat;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-weight: bold; }
+
+#panel .upper a.register {
+  background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+  padding-right: 20px;
+  margin-left: 10px;
+  font-weight: bold; }
+
+#panel .lower ul.panel_links {
+  float: left; }
+
+#panel .lower ul.panel_links a.usercp {
+  background-position: 0 -120px; }
+
+#panel .lower ul.panel_links a.modcp {
+  background-position: 0 -140px; }
+
+#panel .lower ul.panel_links a.admincp {
+  background-position: 0 -160px; }
+
+#panel .lower ul.user_links {
+  float: right; }
+
+#panel .lower ul.user_links li a {
+  padding: 0;
+  background-image: none; }
+
+#panel .upper {
+  background: #0F0F0F url(images/tcat.png) repeat-x;
+  color: #FFF;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #000;
+  padding: 7px;
+  clear: both; }
+
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+  color: #FFF; }
+
+#panel .lower {
+  background: #EFEFEF;
+  color: #999;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #CCC;
+  padding: 5px; }
+
+#panel .lower a:link,
+#panel .lower a:visited,
+#panel .lower a:hover,
+#panel .lower a:active {
+  color: #666; }
+
+#search {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  float: right;
+  vertical-align: middle; }
+
+#search input.button,
+#search input.textbox {
+  border-color: #000; }
+
+#search input.button {
+  background: #0066A2 url(images/thead.png) top left repeat-x;
+  color: #FFF; }
+
+#search input {
+  margin: -3px 0; }
+
+#quick_login .remember_me input {
+  vertical-align: middle;
+  margin: -3px 0 0 5px; }
+
+/* HEADER END */
+/** Impromptu Start **/
+/*! jQuery-Impromptu - v6.2.1 - 2015-05-10
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2015 Trent Richardson; Licensed MIT */
+.jqifade {
+  position: absolute;
+  background-color: #777; }
+
+iframe.jqifade {
+  display: block;
+  z-index: -1; }
+
+div.jqi {
+  width: 400px;
+  max-width: 90%;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  position: absolute;
+  background-color: #FFF;
+  font-size: 11px;
+  text-align: left;
+  border: solid 1px #EEE;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  padding: 7px; }
+
+div.jqi .jqiclose {
+  position: absolute;
+  top: 4px;
+  right: -2px;
+  width: 18px;
+  cursor: default;
+  color: #BBB;
+  font-weight: bold; }
+
+div.jqi .jqistate {
+  background-color: #FFF; }
+
+div.jqi .jqititle {
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: solid 1px #EEE; }
+
+div.jqi .jqimessage {
+  padding: 10px;
+  line-height: 20px;
+  color: #444;
+  overflow: auto; }
+
+div.jqi .jqibuttonshide {
+  display: none; }
+
+div.jqi .jqibuttons {
+  text-align: right;
+  margin: 0 -7px -7px -7px;
+  border-top: solid 1px #E4E4E4;
+  background-color: #F4F4F4;
+  border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px; }
+
+div.jqi .jqibuttons button {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: transparent;
+  font-weight: normal;
+  border: none;
+  border-left: solid 1px #E4E4E4;
+  color: #777;
+  font-weight: bold;
+  font-size: 12px; }
+
+div.jqi .jqibuttons button.jqidefaultbutton {
+  color: #489AFE; }
+
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus {
+  color: #287ADE;
+  outline: none; }
+
+div.jqi .jqibuttons button[disabled] {
+  color: #AAA; }
+
+.jqiwarning .jqi .jqibuttons {
+  background-color: #B95656; }
+
+/* sub states */
+div.jqi .jqiparentstate::after {
+  background-color: #777;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px; }
+
+div.jqi .jqisubstate {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  padding: 7px;
+  border: solid 1px #EEE;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px; }
+
+div.jqi .jqisubstate .jqibuttons button {
+  padding: 10px 18px; }
+
+/* arrows for tooltips/tours */
+.jqi .jqiarrow {
+  position: absolute;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  font-size: 0;
+  border: solid 10px transparent; }
+
+.jqi .jqiarrowtl {
+  left: 10px;
+  top: -20px;
+  border-bottom-color: #FFF; }
+
+.jqi .jqiarrowtc {
+  left: 50%;
+  top: -20px;
+  border-bottom-color: #FFF;
+  margin-left: -10px; }
+
+.jqi .jqiarrowtr {
+  right: 10px;
+  top: -20px;
+  border-bottom-color: #FFF; }
+
+.jqi .jqiarrowbl {
+  left: 10px;
+  bottom: -20px;
+  border-top-color: #FFF; }
+
+.jqi .jqiarrowbc {
+  left: 50%;
+  bottom: -20px;
+  border-top-color: #FFF;
+  margin-left: -10px; }
+
+.jqi .jqiarrowbr {
+  right: 10px;
+  bottom: -20px;
+  border-top-color: #FFF; }
+
+.jqi .jqiarrowlt {
+  left: -20px;
+  top: 10px;
+  border-right-color: #FFF; }
+
+.jqi .jqiarrowlm {
+  left: -20px;
+  top: 50%;
+  border-right-color: #FFF;
+  margin-top: -10px; }
+
+.jqi .jqiarrowlb {
+  left: -20px;
+  bottom: 10px;
+  border-right-color: #FFF; }
+
+.jqi .jqiarrowrt {
+  right: -20px;
+  top: 10px;
+  border-left-color: #FFF; }
+
+.jqi .jqiarrowrm {
+  right: -20px;
+  top: 50%;
+  border-left-color: #FFF;
+  margin-top: -10px; }
+
+.jqi .jqiarrowrb {
+  right: -20px;
+  bottom: 10px;
+  border-left-color: #FFF; }
+
+/** Impromptu End */
+/** Modal Start **/
+.modal {
+  display: none;
+  width: 400px;
+  text-align: left;
+  background: #FFF;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000; }
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(images/close.png) no-repeat 0 0; }
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url(images/spinner_big.gif) no-repeat center center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+
+/** Modal End **/
+/** jGrowl Start **/
+/** Special IE6 Style Positioning **/
+.ie6 {
+  position: absolute; }
+
+.ie6.top-right {
+  right: auto;
+  bottom: auto;
+  left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+
+.ie6.top-left {
+  left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+
+.ie6.bottom-right {
+  left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+
+.ie6.bottom-left {
+  left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+
+.ie6.center {
+  left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+  width: 100%; }
+
+/** jGrowl Styling **/
+.jGrowl {
+  z-index: 9999;
+  color: #FFF;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed; }
+
+.jGrowl.top-left {
+  left: 0;
+  top: 0; }
+
+.jGrowl.top-right {
+  right: 0;
+  top: 0; }
+
+.jGrowl.bottom-left {
+  left: 0;
+  bottom: 0; }
+
+.jGrowl.bottom-right {
+  right: 0;
+  bottom: 0; }
+
+.jGrowl.center {
+  top: 0;
+  width: 50%;
+  left: 25%; }
+
+/** Cross Browser Styling **/
+.jGrowl.center .jGrowl-notification,
+.jGrowl.center .jGrowl-closer {
+  margin-left: auto;
+  margin-right: auto; }
+
+.jGrowl-notification {
+  background-color: #000;
+  opacity: 0.9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+  zoom: 1;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  display: none;
+  border-radius: 5px;
+  word-break: break-all;
+  min-height: 40px; }
+
+.jGrowl-notification .ui-state-highlight,
+.jGrowl-notification .ui-widget-content .ui-state-highlight,
+.jGrowl-notification .ui-widget-header .ui-state-highlight {
+  border: 1px solid #000;
+  background: #000;
+  color: #FFF; }
+
+.jGrowl-notification .jGrowl-header {
+  font-weight: bold;
+  font-size: .85em; }
+
+.jGrowl-notification .jGrowl-close {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  z-index: 99;
+  float: right;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer; }
+
+.jGrowl-closer {
+  background-color: #000;
+  opacity: 0.9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=(0.9*100));
+  zoom: 1;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  display: none;
+  border-radius: 5px;
+  word-break: break-all;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center; }
+
+.jGrowl-closer .ui-state-highlight,
+.jGrowl-closer .ui-widget-content .ui-state-highlight,
+.jGrowl-closer .ui-widget-header .ui-state-highlight {
+  border: 1px solid #000;
+  background: #000;
+  color: #FFF; }
+
+/** Hide jGrowl when printing **/
+@media print {
+  .jGrowl {
+    display: none; } }
+/** jGrowl End **/
+
+/*# sourceMappingURL=theme.css.map */

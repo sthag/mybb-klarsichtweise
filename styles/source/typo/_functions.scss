@@ -1,0 +1,15 @@
+// General font size functions that will convert integers into em values
+// font-size: em(12);
+@function em($target, $context: $font_size) {
+  @return $target / $context * 1em;
+}
+
+@function rem($target, $context: $font_size) {
+  @return $target / $context * 1rem;
+}
+
+// Baseline height calculations
+// line-height: baseline($baseline_size);
+@function baseline($baseline_size) {
+  @return $line / $baseline_size * ceil($baseline_size / $line) * 1;
+}

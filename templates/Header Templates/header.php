@@ -1,34 +1,49 @@
 <div id="container">
-		<a name="top" id="top"></a>
-		<div id="header">
-			<div id="logo">
+	<a name="top" id="top"></a>
+	<div id="header">
+		<header>
+			<a id="logo" href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a>
+			<ul class="menu top_links">
+				{$menu_portal}
+				{$menu_search}
+				{$menu_memberlist}
+				{$menu_calendar}
+				<li>
+					<a href="stats.php" class="statistics">
+						<span alt="Statistics Icon"></span><br />
+						Statistics
+					</a>
+				</li>
+				<li>
+					<a href="https://tmkrth.de/forum/images/smilies/smiley-index.htm" target="_blank" class="smiley">
+						<span alt="Smiley Icon"></span><br />
+						Smileys
+					</a>
+				</li>
+				<li>
+					<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">
+						<span alt="Help Icon"></span><br />
+						{$lang->toplinks_help}
+					</a>
+				</li>
+			</ul>
+		</header>
+		<footer id="panel">
+			<div class="upper">
 				<div class="wrapper">
-					<a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a>
-					<ul class="menu top_links">
-						{$menu_portal}
-						{$menu_search}
-						{$menu_memberlist}
-						{$menu_calendar}
-						<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="panel">
-				<div class="upper">
-					<div class="wrapper">
-						{$quicksearch}
-						{$welcomeblock}
-					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+					{$quicksearch}
+					{$welcomeblock}
 				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
-			</div>
-		</div>
-		<div id="content">
-			<div class="wrapper">
-				{$pm_notice}
-				{$bannedwarning}
-				{$bbclosedwarning}
-				{$unreadreports}
-				{$pending_joinrequests}
-				{$awaitingusers}
-				<navigation>
-				<br />
+			<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+		</footer>
+	</div>
+	<div id="content">
+		<div class="wrapper">
+			{$pm_notice}
+			{$bannedwarning}
+			{$bbclosedwarning}
+			{$unreadreports}
+			{$pending_joinrequests}
+			{$awaitingusers}
+			<navigation>
+			<br />

@@ -1,0 +1,16 @@
+// Custom typography extends and mixins
+// -----------------------------------------------------------------------
+@import "functions";
+@import "mixins";
+@import "extends";
+//@import "web_fonts";
+//@import "ico_fonts";
+
+// Basic styles
+// ------------------------------------------------------------------------------
+html {
+  font-size: 62.5%;
+}
+
+// Specific styles
+// ------------------------------------------------------------------------------
