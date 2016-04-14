@@ -10,19 +10,19 @@
 				{$menu_calendar}
 				<li>
 					<a href="stats.php" class="statistics">
-						<span alt="Statistics Icon"></span><br />
+						<span class="text-icon" alt="Statistics Icon"></span><br />
 						Statistics
 					</a>
 				</li>
 				<li>
 					<a href="https://tmkrth.de/forum/images/smilies/smiley-index.htm" target="_blank" class="smiley">
-						<span alt="Smiley Icon"></span><br />
+						<span class="text-icon" alt="Smiley Icon"></span><br />
 						Smileys
 					</a>
 				</li>
 				<li>
 					<a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">
-						<span alt="Help Icon"></span><br />
+						<span class="text-icon" alt="Help Icon"></span><br />
 						{$lang->toplinks_help}
 					</a>
 				</li>

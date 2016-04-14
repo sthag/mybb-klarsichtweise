@@ -152,60 +152,79 @@ body {
     #logo img:hover {
       border-color: black; }
 
-#header .menu {
+.menu {
   margin: 0;
   padding: 0;
   list-style: none; }
-  #header .menu li {
-    float: left; }
-    #header .menu li span {
-      background-image: url(images/klarsichtweise/nav-top-sprite.png);
-      background-repeat: no-repeat; }
+  .menu li {
+    float: left;
+    margin-right: 0.4rem; }
+  .menu a {
+    text-decoration: none; }
+    .menu a:hover {
+      text-decoration: none; }
+  .menu span {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url(images/klarsichtweise/nav-top-sprite.png);
+    background-repeat: no-repeat; }
 
-#header .top_links {
+.top_links {
   flex: 0 0 auto;
   overflow: auto; }
-  #header .top_links li {
+  .top_links li {
     padding: 1.6rem 0;
     border-width: 0.4rem 0;
     border-style: solid;
     border-color: transparent; }
-    #header .top_links li:hover {
+    .top_links li:hover {
       border-color: black; }
-  #header .top_links a {
+  .top_links a {
     display: block;
-    margin-right: 0.4rem;
-    padding: 0 1.6rem;
-    text-decoration: none; }
-    #header .top_links a:hover {
-      text-decoration: none; }
-  #header .top_links span {
-    display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
+    padding: 0 1.6rem; }
+  .top_links span {
     margin-bottom: 8px; }
-  #header .top_links .sub-menu li:first-child {
+  .top_links .sub-menu li:first-child {
     padding-top: 0; }
-  #header .top_links .sub-menu li {
+  .top_links .sub-menu li {
     float: none;
     padding-bottom: 0;
-    padding-right: 1.6rem;
-    padding-left: 1.6rem;
     border: 0; }
-  #header .top_links .search span {
+  .top_links .search span {
     background-position: 0 0; }
-  #header .top_links .members span {
+  .top_links .members span {
     background-position: 0 -16px; }
-  #header .top_links .calendar span {
+  .top_links .calendar span {
     background-position: 0 -32px; }
-  #header .top_links .help span {
+  .top_links .help span {
     background-position: 0 -48px; }
-  #header .top_links .portal span {
+  .top_links .portal span {
     background-position: 0 -144px; }
-  #header .top_links .smiley span {
+  .top_links .smiley span {
     background-position: 0 -160px; }
-  #header .top_links .statistics span {
+  .top_links .statistics span {
     background-position: 0 -176px; }
+
+.panel_links a, .user_links a {
+  display: inline-block; }
+
+.panel_links {
+  float: left; }
+  .panel_links span {
+    margin-right: 0.4rem; }
+  .panel_links .usercp span {
+    background-position: 0 -80px; }
+  .panel_links .modcp span {
+    background-position: 0 -96px; }
+  .panel_links .admincp span {
+    background-position: 0 -112px; }
+
+.user_links {
+  float: right; }
+  .user_links li {
+    margin-right: 0;
+    margin-right: 0.4rem; }
 
 #panel .upper a.logout {
   font-weight: bold;
@@ -226,25 +245,6 @@ body {
   margin-left: 10px;
   font-weight: bold; }
 
-#panel .lower ul.panel_links {
-  float: left; }
-
-#panel .lower ul.panel_links a.usercp {
-  background-position: 0 -120px; }
-
-#panel .lower ul.panel_links a.modcp {
-  background-position: 0 -140px; }
-
-#panel .lower ul.panel_links a.admincp {
-  background-position: 0 -160px; }
-
-#panel .lower ul.user_links {
-  float: right; }
-
-#panel .lower ul.user_links li a {
-  padding: 0;
-  background-image: none; }
-
 #panel .upper {
   background: #0F0F0F url(images/tcat.png) repeat-x;
   color: #FFF;
@@ -260,6 +260,7 @@ body {
   color: #FFF; }
 
 #panel .lower {
+  overflow: auto;
   background: #EFEFEF;
   color: #999;
   border-top: 1px solid #FFF;

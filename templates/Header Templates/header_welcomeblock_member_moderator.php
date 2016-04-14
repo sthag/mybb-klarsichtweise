@@ -1,1 +1,1 @@
-<li><a href="{$mybb->settings['bburl']}/modcp.php" class="modcp">{$lang->welcome_modcp}</a></li>
+<li><a href="{$mybb->settings['bburl']}/modcp.php" class="modcp"><span class="text-icon"></span>{$lang->welcome_modcp}</a></li>

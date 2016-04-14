@@ -2,7 +2,7 @@
 	<ul class="menu sub-menu">
 		<li>
 			<a href="{$mybb->settings['bburl']}/memberlist.php" class="members">
-				<span alt="Member Icon"></span><br/>
+				<span class="text-icon" alt="Member Icon"></span><br/>
 				{$lang->toplinks_memberlist}
 			</a>
 		</li>

@@ -52,20 +52,30 @@ body {
 	}
 }
 
-#header .menu {
+.menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	li {
 		float: left;
-		span {
-			background-image: url(images/klarsichtweise/nav-top-sprite.png);
-			background-repeat: no-repeat;
+		margin-right: $small-space;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
 		}
+	}
+	span {
+		display: inline-block;
+		width: $base-space;
+		height: $base-space;
+		background-image: url(images/klarsichtweise/nav-top-sprite.png);
+		background-repeat: no-repeat;
 	}
 }
 
-#header .top_links {
+.top_links {
 	flex: 0 0 auto;
 	overflow: auto;
 	li {
@@ -79,17 +89,9 @@ body {
 	}
 	a {
 		display: block;
-		margin-right: $small-space;
 		padding: 0 $base-space;
-		text-decoration: none;
-		&:hover {
-			text-decoration: none;
-		}
 	}
 	span {
-		display: inline-block;
-		width: $base-space;
-		height: $base-space;
 		margin-bottom: 8px;
 	}
 	.sub-menu {
@@ -99,8 +101,6 @@ body {
 		li {
 			float: none;
 			padding-bottom: 0;
-			padding-right: $base-space;
-			padding-left: $base-space;
 			border: 0;
 		}
 	}
@@ -127,6 +127,37 @@ body {
 	}
 }
 
+.panel_links, .user_links {
+	a {
+		display: inline-block;
+	}
+}
+.panel_links {
+	float: left;
+	span {
+		margin-right: $small-space;
+	}
+	.usercp span {
+		background-position: 0 -80px;
+	}
+	.modcp span {
+		background-position: 0 -96px;
+	}
+	.admincp span {
+		background-position: 0 -112px;
+	}
+}
+
+.user_links {
+	float: right;
+	li {
+		margin-right: 0;
+		margin-right: $small-space;
+	}
+}
+
+
+
 #panel .upper a.logout {
 	font-weight: bold;
 	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
@@ -149,31 +180,6 @@ body {
 	font-weight: bold;
 }
 
-#panel .lower ul.panel_links {
-	float: left;
-}
-
-#panel .lower ul.panel_links a.usercp {
-	background-position: 0 -120px;
-}
-
-#panel .lower ul.panel_links a.modcp {
-	background-position: 0 -140px;
-}
-
-#panel .lower ul.panel_links a.admincp {
-	background-position: 0 -160px;
-}
-
-#panel .lower ul.user_links {
-	float: right;
-}
-
-#panel .lower ul.user_links li a {
-	padding: 0;
-	background-image: none;
-}
-
 #panel .upper {
 	background: #0F0F0F url(images/tcat.png) repeat-x;
 	color: #FFF;
@@ -191,6 +197,7 @@ body {
 }
 
 #panel .lower {
+	overflow: auto;
 	background: #EFEFEF;
 	color: #999;
 	border-top: 1px solid #FFF;

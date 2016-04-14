@@ -5,7 +5,7 @@
 <div class="lower">
 	<div class="wrapper">
 		<ul class="menu panel_links">
-			<li><a href="{$mybb->settings['bburl']}/usercp.php" class="usercp">{$lang->welcome_usercp}</a></li>
+			<li><a href="{$mybb->settings['bburl']}/usercp.php" class="usercp"><span class="text-icon"></span>{$lang->welcome_usercp}</a></li>
 			{$modcplink}
 			{$admincplink}
 		</ul>
