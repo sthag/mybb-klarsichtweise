@@ -1,0 +1,147 @@
+// Basic content
+// -----------------------------------------------------------------------------
+
+// Paragraph
+p {
+	@extend %basic;
+	margin: $basic_space 0;
+	color: $basic_font_color;
+	code {
+		padding: $tiny_space $half_space;
+		font-size: 1em;
+		line-height: 1;
+	}
+}
+
+.p_col_line {
+	column-rule: $basic_border_width solid $black;
+}
+.p_col_2, .p_col_3 {
+	@extend p;
+}
+.p_col_2 {
+	column-count: 2;
+	column-gap: $space_3;
+}
+.p_col_3 {
+	column-count: 3;
+	column-gap: $space_4;
+}
+
+// Address
+address {
+
+}
+
+// Line
+hr {
+	margin: $space_3 auto;
+	border-width: $basic_border_width 0 0;
+	border-style: solid;
+	border-color: $black;
+}
+
+.hr_hidden {
+	@extend hr;
+	border-color: transparent;
+}
+
+.hr_dotted {
+	@extend hr;
+	border-style: dotted;
+}
+
+// Preformat
+pre {
+	@extend %basic_mono;
+}
+
+.pre_code {
+	border-color: rgba($white,.1);
+	border-style: dotted;
+	border-width:  0 0 0 $border_width_4;
+	border-radius: $basic_corner;
+	padding: $basic_space;
+	background-color: rgba($white,.1);
+	code {
+		background-color: transparent;
+	}
+}
+
+// Quote
+blockquote {
+	margin: $basic_space $basic_indent;
+}
+
+.quote_mark {
+	p::before {
+		content: "\201E \0020";
+	}
+	p::after {
+		content: "\201C \0020";
+	}
+	.quote_source {
+		&::before, &::after {
+			content: "";
+		}
+	}
+}
+
+// List
+dl, ul, ol {
+	margin: $space_2 0 $basic_space;
+}
+
+ul, ol {
+	padding-left: $basic_indent;
+}
+
+li, dt, dd {
+	@extend %basic;
+	color: $black;
+}
+
+dd {
+	margin-left: $basic_indent;
+}
+
+ul {
+	li {
+		list-style: square;
+	}
+}
+
+.list_dash {
+	li {
+		list-style: none;
+		position: relative;
+	
+		&:before {
+			content: "_";
+			position: absolute;
+			left: -1em;
+		}
+	}
+}
+
+// Embedded
+figure {
+	margin: $space_2 $basic_indent;
+}
+
+figcaption {
+	@extend %basic;
+}
+
+
+
+// Special elements
+// -----------------------------------------------------------------------------
+
+main {
+
+}
+
+div {
+
+}

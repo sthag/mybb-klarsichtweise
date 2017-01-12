@@ -1,0 +1,3 @@
+user-agent: *
+disallow: /private/
+sitemap: http://domain.tld/sitemap.xml

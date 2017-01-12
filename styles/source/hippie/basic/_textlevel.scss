@@ -1,0 +1,146 @@
+// Links
+// -----------------------------------------------------------------------------
+
+a {
+	color: $basic_link_color;
+//  color: lighten($basic_action_color, 20%);
+	text-decoration: none;
+
+	&:active,
+	&:focus,
+	&:hover {
+	color: $basic_highlight_color;
+	}
+}
+
+.link_line {
+	border-bottom-width: $tiny_space;
+	border-bottom-style: dotted;
+	border-color: $basic_border_color;
+	background-color: transparent;
+	color: $basic_font_color;
+	transition: color $basic_duration $basic_timing;
+
+	&:active,
+	&:focus,
+	&:hover {
+	background-color: $basic_action_color;
+	color: $basic_highlight_color;
+	}
+}
+
+
+
+// Other elements
+// -----------------------------------------------------------------------------
+
+i, em {
+	font-style: italic;
+}
+
+b, strong {
+	font-weight: 500;
+}
+
+small {
+
+}
+
+
+// Cite
+cite {
+	font-style: italic;
+}
+
+q {
+
+}
+
+dfn {
+
+}
+
+abbr {
+
+}
+
+data {
+
+}
+
+time {
+
+}
+
+// Code
+code {
+	@extend %basic_mono;
+	color: lighten($black, 12%);
+	background-color: rgba($white,.1);
+}
+.code_solo {
+	@extend %basic_mono;
+	padding: $tiny_space $half_space;
+	color: $basic_font_color;
+}
+
+samp {
+
+}
+
+kbd {
+
+}
+
+sub, sup {
+
+}
+
+u {
+
+}
+
+// Marks
+mark {
+	background-color: $alpha_color;
+}
+.mark_cursor {
+	color: $basic_highlight_color;
+	background-color: $black;
+}
+::-moz-selection {
+	color: $basic_highlight_color;
+	background-color: $black;
+}
+::selection {
+	color: $basic_highlight_color;
+	background-color: $black;
+}
+
+span {
+
+}
+.span_solo {
+	@extend %solo;
+}
+
+br {
+
+}
+
+wbr {
+
+}
+
+
+
+// Edits
+// -----------------------------------------------------------------------------
+
+ins {
+
+}
+
+del {
+
+}

@@ -1,0 +1,147 @@
+// Table
+// -----------------------------------------------------------------------------
+
+table {
+	margin-top: $space_2;
+	margin-bottom: $space_2;
+	border: $basic_border;
+	border-collapse: collapse;
+}
+
+th, td {
+	@extend %basic;
+	padding: $half_space;
+}
+
+th {
+	border: $basic_border;
+	text-align: left;
+}
+
+.precol {
+	border-right: $basic_border;
+}
+
+td {
+	border-right: $cell_border;
+	border-bottom: $cell_border;
+}
+
+td:last-child {
+	border-right: 0;
+}
+
+tr:last-child td {
+	border-bottom: 0;
+}
+
+tfoot {
+	tr:first-child td {
+		border-top: $basic_border;
+	}
+}
+
+.table_blank {
+	border: $basic_border_width solid transparent;
+	
+	th, td {
+	border: $basic_border_width solid transparent;
+	}
+}
+
+.table_free {
+	border: $basic_border_width solid transparent;
+}
+
+.table_stripe {
+	td {
+	border-top: 0;
+	border-bottom: 0;
+	}
+
+	tr:nth-child(even) td {
+	background-color: $light_color;
+	}
+}
+
+.table_fix {
+	table-layout: fixed;
+}
+
+caption {
+	@extend p;
+	padding: $half_space 0;
+	border: $basic_border_width dotted $basic_border_color;
+	text-align: center;
+}
+
+.table_link {
+	width: 100%;
+	border: 0;
+	table-layout: auto;
+
+	tbody {
+		border-bottom: $cell_border;
+
+		&:hover {
+			background-color: $light_color;
+		}
+	}
+
+	th, td {
+		border: 0;
+	}
+
+	.cell_icon {
+		width: 48px;
+		text-align: center;
+		img {
+			vertical-align: text-top;
+		}
+	}
+
+	.cell_link {
+		padding-right: $basic_space;
+		padding-left: $basic_space;
+
+		&:hover {
+			background-color: $foxtrot_color;
+		}
+
+		a {
+			display: block;
+		}
+
+		.link_url {
+			display: none;
+		}
+
+		&:hover .link_url {
+			display: block;
+			color: $white;
+		}
+
+		&:hover .link_text {
+			display: none;
+		}
+	}
+
+	.cell_date {
+		width: 12%;
+		text-align: center;
+	}
+
+	.cell_text {
+		padding-right: $basic_space;
+		padding-left: $basic_space;
+
+		div {
+			width: 100%;
+		}
+
+		.shorten {
+			@extend %short;
+			max-height: 44px;
+		}
+	}
+}

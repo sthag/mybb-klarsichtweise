@@ -1,0 +1,23 @@
+// Custom extends and mixins
+// ------------------------------------------------------------------------------
+@import "mixins";
+@import "extends";
+
+// Editor module styles
+// ------------------------------------------------------------------------------
+
+%wip {
+  border-right: $basic_space solid rgba(crimson, .8);
+  background-color: rgba(crimson, .1) !important;
+}
+.wip {
+  @extend %wip;
+  &:before, &:after {
+    content: "";
+    display: block;
+    height: 48px;
+  }
+}
+.wip_txt {
+  @extend %wip;
+}

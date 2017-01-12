@@ -1,0 +1,121 @@
+// Clearing and floating
+// ------------------------------------------------------------------------------
+
+.clear {
+	clear: both;
+	&::before,
+	&::after {
+		clear: both;
+	}
+}
+
+.float_left {
+	float: left;
+	margin-right: $space_3;
+}
+
+.overflow {
+	overflow: auto;
+}
+
+
+
+// General positioning attributes
+// ------------------------------------------------------------------------------
+
+.center_50 {
+	margin-right: 25%;
+	margin-left: 25%;
+}
+.center_25 {
+	margin-right: 37.5%;
+	margin-left: 37.5%;
+}
+
+.width_full {
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+
+
+// Structure attributes
+// ------------------------------------------------------------------------------
+
+// Simulate new body element
+.screen_body {
+	width: $basic_width;
+	@media screen and (orientation: landscape) {
+		@media (min-width: $screen_small) {
+			width: $width_2;
+		}
+		@media (min-width: $screen_medium) {
+			width: $width_3;
+		}
+		@media (min-width: $screen_large) {
+			width: $width_4;
+		}
+	}
+	@media screen and (orientation: portrait) {
+		@media (min-width: $screen_small) {
+			width: $width_2;
+		}
+	}
+	margin: 0 auto;
+	border-top-width: $border_width_8;
+	border-top-style: solid;
+	border-color: $basic_border_color;
+	padding-top: $space_3;
+}
+
+// Fixed elements
+.relative {
+	position: relative;
+}
+.div_fix {
+	position: fixed;
+}
+.bottom {
+	bottom: 0;
+}
+
+// Space and placeholders
+.space_box {
+	float: left;
+	display: table;
+	width: $space_4;
+	text-align: center;
+	vertical-align: middle;
+	span {
+		display: table-cell;
+	}
+}
+
+.div_placeholder {
+	width: 100%;
+	height: $space_4;
+	border: $border_width_4 solid rgba($black,.1);
+	border-radius: $basic_corner;
+	padding: $basic_space;
+	background-color: rgba($black,.1);
+	svg {
+		vertical-align: top;
+	}
+}
+.div_placeholder_bkg {
+	width: 100%;
+	height: $space_4;
+	border: $border_width_4 solid rgba($black,.1);
+	border-radius: $basic_corner;
+	padding: $basic_space;
+	/*data:[<mime type>][;charset=<charset>][;base64],<encoded data>*/
+	background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0' y='0' width='100%' height='100%'><line x1='2%' y1='2%' x2='98%' y2='98%' stroke='#000' stroke-width='.5'/><line x1='0' y1='100%' x2='100%' y2='0' stroke='#000' stroke-width='.5'/></svg>") no-repeat;
+	background-color: rgba($black,.1);
+}
+
+.div_info {
+	padding: $space_2 $basic_indent;
+	border-right: $basic_space solid rgba($echo_color, .6);
+	background-color: rgba($echo_color, .1) !important;
+}

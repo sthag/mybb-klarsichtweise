@@ -1,0 +1,111 @@
+// Document
+// -----------------------------------------------------------------------------
+
+html {
+	height: 100%;
+}
+
+
+
+
+// Basic sections
+// -----------------------------------------------------------------------------
+
+body {
+	box-sizing: border-box;
+	font-family: $primary_font_family;
+	font-size: $basic_size;
+	line-height: $basic_line;
+	color: $basic_font_color;
+	background-color: $basic_background_color;
+	
+	*,
+	::before,
+	::after {
+		box-sizing: inherit;
+	}
+}
+
+article {
+
+}
+
+section {
+
+}
+
+aside.right + section {
+	margin-right: calc(#{$basic_aside_width} + #{$basic_space});
+}
+
+aside.left + section {
+	margin-left: calc(#{$basic_aside_width} + #{$basic_space});
+}
+
+nav {
+
+}
+
+aside {
+	width: $basic_aside_width;
+	&.left {
+		float: left;
+	}
+	&.right {
+		float: right;
+	}
+	*:first-child {
+		margin-top: 0;
+	}
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+// Headings
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+	@extend %head_1;
+	margin: $space_5 0 $space_3;
+}
+
+h2 {
+	@extend %head_2;
+	margin: $space_4 0 $space_3;
+}
+
+h3 {
+	@extend %head_3;
+	margin: $space_2 0 $space_2;
+	text-transform: uppercase;
+}
+
+h4 {
+	@extend %head_3;
+	margin: $space_2 0 $space_2;
+	text-transform: none;
+}
+
+h5 {
+	@extend %head_4;
+	margin: $space_2 0 $basic_space;
+	text-transform: none;
+}
+
+h6 {
+	@extend %basic;
+	margin: $basic_space 0;
+	text-transform: none;
+	font-weight: bold;
+}
+

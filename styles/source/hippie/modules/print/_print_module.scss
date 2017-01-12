@@ -1,0 +1,128 @@
+// Custom extends and mixins
+// ------------------------------------------------------------------------------
+@import "mixins";
+@import "extends";
+
+// Print module styles
+// ------------------------------------------------------------------------------
+
+%paper {
+	background-color: $white;
+}
+
+$a4: ".dina4" 1.2cm 1.2cm 1.2cm 2.4cm;
+$a5: ".dina5" 0 0 0 1.2cm;
+$a6: ".dina6" 0 0 0 1.2cm;
+
+$din: $a4, $a5, $a6;
+
+.print_body {
+	font-size: $basic_print_size;
+	margin: 10vh 20vw;
+
+	@page {
+		size: A4;
+		margin: 1.2cm;
+	}
+
+	@page:first {
+		size: A4;
+		margin: 0;
+	}
+
+	@each $space in $din {
+		#{nth($space, 1)} {
+			padding-top: nth($space, 2);
+			padding-right: nth($space, 3);
+			padding-bottom: nth($space, 4);
+			padding-left: nth($space, 5);
+
+			.page_head, .page_foot {
+				right: nth($space, 3);
+				left: nth($space, 5);
+			}
+			.page_head {
+				top: nth($space, 2);
+			}
+			.page_foot {
+				bottom: nth($space, 4);
+			}
+		}
+	}
+
+	*[class^="din"] {
+		@extend %paper;
+		position: relative;
+		overflow: auto;
+
+		p {
+			@extend %basic_print;
+		}
+
+		.page_head, .page_foot {
+			position: absolute;
+		}
+
+		.page_head {
+			page: cover;
+		}
+
+		.page_foot {
+			display: flex;
+			flex-direction: row;
+
+			*:last-child {
+				margin-bottom: 0;
+			}
+
+			p {
+				flex: 1 0 auto;
+				margin: 0;
+				font-size: 8pt;
+				line-height: 10pt;
+				text-align: center;
+			}
+
+			.page_no {
+				flex: 1 0 auto;
+				font-size: 20pt;
+				line-height: 1;
+				text-align: right;
+			}
+			p:first-child {
+				text-align: left;
+			}
+		}
+		.page_content {
+			margin-top: 10cm;
+			margin-bottom: 2cm;
+		}
+		margin: $space_3 auto;
+	}
+
+	.page_title, .page_date {
+		font-size: 14pt;
+	}
+
+	.page_title {
+		margin: 0;
+	}
+
+	.page_date, .page_no {
+		@extend %head_1;
+		float: right;
+	}
+
+	.page_author {
+		position: absolute;
+		top: 5cm;
+		right: 0;
+		text-align: right;
+	}
+
+	.page_recipient {
+		position: absolute;
+		top: 5cm;
+		left: 0;
+	}
+}

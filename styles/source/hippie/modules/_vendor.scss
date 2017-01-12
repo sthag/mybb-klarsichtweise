@@ -11,7 +11,7 @@
  *
  * @example
  *   .selector
- *     +vendor-prefix(hyphens, auto)
+ *     @include vendor-prefix(hyphens, auto)
  */
 @mixin vendor-prefix($name, $argument) {
   -webkit-#{$name}: #{$argument};

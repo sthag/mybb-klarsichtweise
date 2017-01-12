@@ -1,0 +1,123 @@
+// Form basics
+// -----------------------------------------------------------------------------
+
+form {
+
+}
+
+fieldset {
+	margin: $basic_space 0;
+	border: $basic_border;
+}
+
+legend {
+	@extend %basic;
+	padding: 0 $half_space;
+}
+
+
+
+// Common
+// -----------------------------------------------------------------------------
+label {
+	@extend %basic;
+}
+
+.input_default label {
+	display: table;
+	margin: $half_space 0;
+
+	input {
+		display: table-cell;
+		margin-left: $basic_space;
+		padding: $half_space ($half_space + 1);
+		border-style: solid;
+		border-color: transparent;
+		background-color: $basic_io_background_color;
+		color: $basic_io_font_color;
+
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+	}
+}
+
+input {
+
+}
+
+
+
+// More
+// -----------------------------------------------------------------------------
+
+button {
+
+}
+
+select {
+
+}
+
+datalist {
+
+}
+
+optgroup {
+
+}
+
+option {
+
+}
+
+textarea {
+
+}
+
+output {
+
+}
+
+progress {
+
+}
+
+meter {
+
+}
+
+
+
+// Interactive elements
+// -----------------------------------------------------------------------------
+
+details {
+
+}
+
+summary {
+
+}
+
+menu {
+
+}
+
+menuitem {
+
+}
+
+dialog {
+
+}
+
+
+
+// Canvas
+// -----------------------------------------------------------------------------
+
+canvas {
+	
+}

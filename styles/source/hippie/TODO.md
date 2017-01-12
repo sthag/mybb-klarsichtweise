@@ -1,0 +1,4 @@
+- add dynamic content to robots.txt during build process
+- add dynamic content to sitemap.xml
+- add build process for normalize.css from github.com/necolas/normalize.css
+- add build process for bourbon from https://github.com/thoughtbot/bourbon

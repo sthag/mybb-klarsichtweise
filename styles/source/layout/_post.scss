@@ -1,0 +1,10 @@
+.post {
+	margin-bottom: $space_3;
+	.post_author, .post_controls {
+		background-color: rgba($white,.9);
+	}
+	.post_content {
+		background-color: rgba($white,.75);
+	}
+}
+

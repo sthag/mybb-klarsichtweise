@@ -1,21 +1,5 @@
-// Custom extends and mixins
-// ------------------------------------------------------------------------------
-@import "mixins";
-
 // Layout structure
 // ------------------------------------------------------------------------------
-* {
-//  @include vendor-prefix(box-sizing, border-box);
-}
-
-body {
-	background: $white;
-	color: $india_bw;
-	font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, Sans-Serif;
-	font-size: $font_size;
-	line-height: $line;
-}
-
 .wrapper {
 	width: 90%;
 	min-width: 970px;
@@ -28,11 +12,15 @@ body {
 
 
 /* HEADER START */
-#header header {
-	@extend .wrapper;
-	margin-top: $mid-space;
-	margin-bottom: $mid-space;
-	display: flex;
+#header {
+	overflow: auto;
+
+	header {
+		@extend .wrapper;
+		margin-top: $mid-space;
+		margin-bottom: $mid-space;
+		display: flex;
+	}
 }
 
 #logo {
@@ -55,10 +43,10 @@ body {
 .menu {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	li {
 		float: left;
 		margin-right: $small-space;
+		list-style: none;
 	}
 	a {
 		text-decoration: none;

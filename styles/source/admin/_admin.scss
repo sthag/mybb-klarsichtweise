@@ -1,8 +1,3 @@
-// Custom extends and mixins
-// ------------------------------------------------------------------------------
-@import "mixins";
-@import "extends";
-
 // Admin styles
 // ------------------------------------------------------------------------------
 /*
@@ -16,5 +11,14 @@ strong {
 strong:before {
 	content: "!";
 	color: crimson;
+}
+
+// Fix for overview table
+#overview table {
+	margin: 0;
+}
+
+.tborder {
+	@extend .table_blank;
 }
 
