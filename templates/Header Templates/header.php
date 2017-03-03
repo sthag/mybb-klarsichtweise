@@ -15,7 +15,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="https://tmkrth.de/forum/images/smilies/smiley-index.htm" target="_blank" class="smiley">
+					<a href="" target="_blank" class="smiley">
 						<span class="text-icon" alt="Smiley Icon"></span><br />
 						Smileys
 					</a>
