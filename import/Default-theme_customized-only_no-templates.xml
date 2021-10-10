@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<colors>
-	<scheme><![CDATA[black=Black]]></scheme>
-	<scheme><![CDATA[calm=Calm]]></scheme>
-	<scheme><![CDATA[dawn=Dawn]]></scheme>
-	<scheme><![CDATA[earth=Earth]]></scheme>
-	<scheme><![CDATA[flame=Flame]]></scheme>
-	<scheme><![CDATA[leaf=Leaf]]></scheme>
-	<scheme><![CDATA[night=Night]]></scheme>
-	<scheme><![CDATA[sun=Sun]]></scheme>
-	<scheme><![CDATA[twilight=Twilight]]></scheme>
-	<scheme><![CDATA[water=Water]]></scheme>
+<theme name="Default" version="1827">
+	<properties>
+		<templateset><![CDATA[1]]></templateset>
+		<imgdir><![CDATA[images]]></imgdir>
+		<logo><![CDATA[images/logo.png]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<editortheme><![CDATA[mybb.css]]></editortheme>
+		<disporder><![CDATA[a:17:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:15:"color_black.css";i:8;s:14:"color_calm.css";i:9;s:14:"color_dawn.css";i:10;s:15:"color_earth.css";i:11;s:15:"color_flame.css";i:12;s:14:"color_leaf.css";i:13;s:15:"color_night.css";i:14;s:13:"color_sun.css";i:15;s:18:"color_twilight.css";i:16;s:15:"color_water.css";i:17;}]]></disporder>
+		<colors><![CDATA[a:10:{s:5:"black";s:5:"Black";s:4:"calm";s:4:"Calm";s:4:"dawn";s:4:"Dawn";s:5:"earth";s:5:"Earth";s:5:"flame";s:5:"Flame";s:4:"leaf";s:4:"Leaf";s:5:"night";s:5:"Night";s:3:"sun";s:3:"Sun";s:8:"twilight";s:8:"Twilight";s:5:"water";s:5:"Water";}]]></colors>
+	</properties>
 	<stylesheets>
-		<stylesheet name="color_black.css" attachedto="black" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_black.css" attachedto="black" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -89,9 +89,10 @@ a:active {
 	background-color: #333;
 	color: #fff;
 	border-color: #000;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_calm.css" attachedto="calm" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_calm.css" attachedto="calm" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -136,9 +137,10 @@ a:active {
 	background-color: #48715b;
 	color: #fff;
 	border-color: #263c30;
-}]]>
-	</stylesheet>
-	<stylesheet name="color_dawn.css" attachedto="dawn" version="1800"><![CDATA[a:link,
+}
+	]]>
+		</stylesheet>
+		<stylesheet name="color_dawn.css" attachedto="dawn" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -182,9 +184,10 @@ a:active {
 	background-color: #f2a555;
 	color: #fff;
 	border-color: #9a4e20;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_earth.css" attachedto="earth" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_earth.css" attachedto="earth" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -228,9 +231,10 @@ a:active {
 	background-color: #6d5545;
 	color: #fff;
 	border-color: #31261e;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_flame.css" attachedto="flame" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_flame.css" attachedto="flame" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -274,9 +278,10 @@ a:active {
 	background-color: #a20000;
 	color: #fff;
 	border-color: #550000;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_leaf.css" attachedto="leaf" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_leaf.css" attachedto="leaf" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -320,9 +325,10 @@ a:active {
 	background-color: #5aaf33;
 	color: #fff;
 	border-color: #234615;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_night.css" attachedto="night" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_night.css" attachedto="night" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -366,9 +372,10 @@ a:active {
 	background-color: #023a61;
 	color: #fff;
 	border-color: #011929;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_sun.css" attachedto="sun" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_sun.css" attachedto="sun" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -421,9 +428,10 @@ a:active {
 	background-color: #ffea9c;
 	color: #000;
 	border-color: #ffaf1a;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_twilight.css" attachedto="twilight" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_twilight.css" attachedto="twilight" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -467,9 +475,10 @@ a:active {
 	background-color: #426276;
 	color: #fff;
 	border-color: #1d2b34;
-}]]>
+}
+		]]>
 		</stylesheet>
-		<stylesheet name="color_water.css" attachedto="water" version="1800"><![CDATA[a:link,
+		<stylesheet name="color_water.css" attachedto="water" version="1827"><![CDATA[a:link,
 a:visited,
 a:hover,
 a:active {
@@ -513,7 +522,8 @@ a:active {
 	background-color: #2d9595;
 	color: #fff;
 	border-color: #133f41;
-}]]>
+}
+		]]>
 		</stylesheet>
 	</stylesheets>
-</colors>
+</theme>
